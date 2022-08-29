@@ -1,0 +1,46 @@
+<!-- Position 속성(2/5) 설정 // css_Ex04.css 참조 -->
+<!-- position: static // 굳이 명시하지 않아도 default값임 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .sp1 {
+            position: static;
+            top: 100px;
+            background-color: cyan;
+            width: 400px;
+            height: 50px;
+        }
+
+        .sp2 {
+            position: static;
+            left: 30px;
+            background-color: orange;
+            width: 400px;
+            height: 50px;
+        }
+
+        .sp3 {
+            background-color: lightgreen;
+            width: 400px;
+            height: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 해당 html 웹 브라우저에서 실행해서 f12 킨후
+    화살표로 해당 박스들 클릭해서 position 껏다 켜도 동일함
+    이유는 position의 default값이 static이기때문  -->
+    <h1>positioning style1</h1>
+    <p class="sp1">정적 위치 설정 적용 1</p>
+    <div class="sp2">정적 위치 설정 적용 2</div>
+    <p class="sp3">기본 위치 설정</p>
+</body>
+
+</html>

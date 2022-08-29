@@ -1,0 +1,11 @@
+/* 
+# Position 속성 => 텍스트, 이미지, 표 등 요소를 웹 문서에 배치할 때 사용하는 속성
+    정적 위치 설정 position: static: (default 값, 생략o)
+    상대 위치 설정 position: relative:
+    => static과의 상대 위치 비교
+    절대 위치 설정 position: absolute: 
+    => 전체 페이지를 기준으로 위치에 배정
+    고정 위치 설정 position: fixed:
+    => 창의 스크롤을 움직여도 사라지지않고 고정된 위치에 배정
+
+*/

@@ -1,0 +1,53 @@
+<!-- Position 속성(3/5) 설정 // css_Ex04.css 참조 -->
+<!-- 상대 위치 설정 position: relative: -->
+<!-- static을 기준으로 설정하는 것 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .sp {
+            position: static;
+            left: 30px;
+            /* 적용되지 않음 */
+            background-color: cyan;
+            width: 400px;
+            height: 50px;
+        }
+
+        /* static과의 위치 차이
+            좌로 30px, 위로 10px */
+        .rp1 {
+            position: relative;
+            left: 30px;
+            top: 10px;
+            background-color: orange;
+            width: 400px;
+            height: 50px;
+        }
+
+        /* static과의 위치 차이 
+            좌로 60px, 위로 20px */
+        .rp2 {
+            position: relative;
+            left: 60px;
+            top: 20px;
+            background-color: lightgreen;
+            width: 400px;
+            height: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>positioning style2</h1>
+    <p class="sp">정적 위치 설정 적용</p>
+    <div class="rp1">상대 위치 설정 적용 -left 30px, top 10px</div>
+    <p class="rp2">상대 위치 설정 적용 -left 60px top 20px</p>
+</body>
+
+</html>

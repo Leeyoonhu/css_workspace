@@ -1,0 +1,40 @@
+<!-- Position 속성(5/5) 설정 // css_Ex04.css 참조 -->
+<!-- 고정 위치 설정 position: fixed: -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .p {
+            background-color: yellow;
+            width: 300px;
+            height: 50px;
+        }
+
+        .fp {
+            position: fixed;
+            right: 5px;
+            top: 5px;
+            background-color: lightgreen;
+            width: 300px;
+            height: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>positioning style4</h1>
+    <p class="p">기본 위치 설정 박스1</p>
+    <p class="p">기본 위치 설정 박스2</p>
+    <p class="p">기본 위치 설정 박스3</p>
+    <p class="p">기본 위치 설정 박스4</p>
+    <p class="p">기본 위치 설정 박스5</p>
+    <!-- 고정 위치의 position은 창 크기가 변해도 해당 위치에 고정되어있음 -->
+    <p class="fp">고정 위치 설정 박스 : 오른쪽 스크롤 위아래로 이동해보기</p>
+</body>
+
+</html>
