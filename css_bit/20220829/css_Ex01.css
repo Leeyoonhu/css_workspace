@@ -1,0 +1,39 @@
+/* p3에 대한 외부 스타일 지정 ==> 외부 스타일 시트*/
+/* p3 {
+    color: green;
+    background-color: yellow;
+} */
+
+/* css 우선순위 확인하기 */
+/* p {
+    color: green;
+    background-color: yellow;
+} */
+
+
+
+
+
+
+
+
+
+
+/* 
+
+# css의 우선순위 
+(하나의 요소에 여러 스타일 시트가 동시에 정의될경우)
+1. HTML 인라인 스타일시트 
+2. 내부 스타일 시트
+3. 외부 스타일 시트
+4. 브라우저 기본 스타일 시트
+// 강제 적용하고 싶을 경우 !important 
+ex) color: blue!important;
+순차적으로 적용됨
+
+
+# 브라우저 내에서 쉽게 변경
+f12 > Elements 좌측의 화살표 > 현재 홈페이지 내의 바꿀 놈 
+> Style 위의 내역에서 보면서 바꾸기
+
+*/

@@ -1,0 +1,39 @@
+<!-- 인라인, 내부, 외부 스타일 시트 -->
+<!-- 규모가 커질수록 외부 스타일 시트를 사용할 것 권장 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 링크로 외부 스타일 css 파일 지정 -->
+    <link type="text/css" rel="stylesheet" href="./css_Ex01.css">
+    <title>css의 사용위치</title>
+    <style>
+        /* p2 {
+            /* 내부 스타일 시트 */
+        /* color: blue;
+        } */
+        p {
+            color: blue !important;
+        }
+
+        p {
+            color: yellow;
+        }
+
+        p {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <p1 style="color:red;">인라인 스타일 시트 적용</p1><br>
+    <p2>내부 스타일 시트 적용</p2><br>
+    <p3>외부 스타일 시트 적용</p3><br> -->
+    <p>CSS가 중복되는 경우는?</p>
+</body>
+
+</html>

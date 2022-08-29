@@ -1,0 +1,39 @@
+<!-- id 선택자 css_Ex02참조 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* id 는 반드시 앞에 # */
+        #id1 {
+            color: blue;
+            background-color: pink;
+        }
+
+        #id2 {
+            color: blue;
+            background-color: yellow;
+        }
+
+        h2#id1 {
+            color: red;
+            background-color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- class와 마찬가지로 tag안에 어떤 id쓸지 명시-->
+    <h1 id="id1">ID 1 선택자</h1>
+    <p id="id1">ID 1 선택자</p>
+    <h1 id="id2">ID 2 선택자</h1>
+    <p id="id2">ID 2 선택자</p>
+    <!-- id1이지만 h2에서의 id1을 재정의 했으므로 재정의한값 출력 -->
+    <h2 id="id1">Element+id Selector</h2>
+</body>
+
+</html>

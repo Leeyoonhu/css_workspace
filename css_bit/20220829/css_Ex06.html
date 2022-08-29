@@ -1,0 +1,40 @@
+<!-- 속성, 속성값 선택자 css_Ex02참조 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 속성을 []안에 넣어주고, 해당 속성값도 정의가능 */
+        h1[text] {
+            color: red;
+            background-color: gray;
+        }
+
+        p[text] {
+            color: blue;
+            background-color: yellow;
+        }
+
+        /* 속성에게 속성값 지정 */
+        h1[text="attr3"] {
+            color: green;
+            background-color: pink;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 text="attr1">text 속성 이름 선택자</h1>
+    <h1 text="attr2">text 속성 이름 선택자</h1>
+    <p text="attr3">text 속성 이름 선택자</p>
+    <!-- h1의 text속성 값이 attr3일경우를 재정의 했기때문에
+    재정의한 값으로 출력 -->
+    <h1 text="attr3">text 속성 이름 선택자</h1>
+    <p>속성 선택 없음</p>
+</body>
+
+</html>
