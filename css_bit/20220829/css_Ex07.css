@@ -1,0 +1,14 @@
+/* 
+# 형식 변환 속성
+    block 형식
+    - 새로운 행에서 시작
+    - 화면의 최대 너비만큼 차지
+    margin, padding 속성을 상하 좌우 설정가능
+
+    inline 형식
+    - 최소한의 너비만
+    - 줄바꿈 따로 해줘야함
+    margin, padding 속성을 좌, 우만 설정가능
+
+    display : block or inline 을 통해 형식변환
+*/

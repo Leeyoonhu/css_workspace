@@ -1,0 +1,49 @@
+<!-- 가시성(visibility), display 속성// css_Ex06.css 참조 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .v1 {
+            visibility: hidden;
+            /* 이미지 감춤, 공간은 남김 */
+            border: 1px dotted red;
+        }
+
+        .v2 {
+            visibility: visible;
+            border: 1px dotted red;
+        }
+
+        .v3 {
+            display: none;
+            /* 이미지 감춤, 공간도 숨김 */
+            border: 1px dotted red;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 숨김(hidden)상태의 이미지만큼 빈 공간 생성 -->
+    <div class="v1">
+        <img src="../css.JPG" width="100">
+    </div>
+    <!-- 보여지는 이미지 1 -->
+    <div class="v2">
+        <img src="../css.JPG" width="100">
+    </div>
+    <!-- 보이지 않도록 none // 공간 삭제 -->
+    <div class="v3">
+        <img src="../css.JPG" width="100">
+    </div>
+    <!-- 보여지는 이미지 2 -->
+    <div class="v2">
+        <img src="../css.JPG" width="100">
+    </div>
+</body>
+
+</html>

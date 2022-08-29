@@ -1,0 +1,42 @@
+<!-- 불투명도(opacity) 속성(2/3)// css_Ex06.css 참조 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div.background {
+            /* 배경을 css.jpg로 다 채울때까지 반복 */
+            background: url(../conan.jpg) repeat;
+            border: 1px solid black;
+        }
+
+        /* 박스 배경 흰색, 투명도 50%, 마진30px */
+        div.box {
+            margin: 30px;
+            background-color: #ffffff;
+            border: 2px solid blue;
+            opacity: 0.5;
+        }
+
+        div.box p {
+            margin: 5%;
+            font-weight: bold;
+            color: #000000;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="background">
+        <div class="box">
+            <p>HTML5 웹 프로그래밍</p>
+        </div>
+    </div>
+</body>
+
+</html>
