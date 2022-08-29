@@ -1,0 +1,56 @@
+<!-- 구조 선택자 css_Ex02참조 -->
+<!-- 같은 부모의 자식을 Sibling -->
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        li:first-child {
+            color: #FF0000;
+            font-weight: bold;
+        }
+
+        li:last-child {
+            color: purple;
+            font-weight: bold;
+        }
+
+        /* 16진수로 색지정 2자리/2자리/2자리 
+            - 색상 표현 3가지 방법
+            R : 00 / G : FF / B : FF
+            00 => 0000 / 0000   256가지 표현
+            FF => 1111 / 1111   256가지 표현
+            총 R, G ,B 는 256^3가지 표현 가능
+            rgb(0, 255, 255)와 같이도 표현 가능
+            ex) red => #FF0000, green => #00FF00
+        */
+        li:nth-child(2n) {
+            background-color: #00FFFF;
+        }
+
+        li:nth-child(2n+1) {
+            background-color: #FFFF00;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <!-- 첫번째 형식 + 2n+1 수열의 형식 적용 -->
+        <li>첫번째</li>
+        <!-- 2n 수열 형식 적용 -->
+        <li>두번째</li>
+        <li>세번째</li>
+        <li>네번째</li>
+        <li>다섯번째</li>
+        <li>여섯번째</li>
+        <!-- 마지막 형식 + 2n+1 수열의 형식 적용 -->
+        <li>일곱번째</li>
+    </ul>
+</body>
+
+</html>

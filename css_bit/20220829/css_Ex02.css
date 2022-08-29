@@ -10,5 +10,5 @@
 - 조합 선택자 => 기존 여러 선택자를 복합적으로 조합
 구분해야 할 표현 // 후손, 자손, 인접, 일반
 - 상태 선택자 => :checked :focused :enabled :disabled
-
+- 구조 선택자 => first-child, last-child, nth-child(등차수열), nth-last-child(등차수열)
 */
