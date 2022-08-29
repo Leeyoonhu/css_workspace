@@ -1,0 +1,30 @@
+<!-- 속성, 속성값 선택자 css_Ex02참조 -->
+<!-- 속성 선택자의 형식 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        p[text] {
+            color: red;
+        }
+
+        p[text="red"] {
+            color: yellow;
+            background-color: purple;
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- p[text]에서 지정한 값으로 출력 -->
+    <p text="hello">모든 텍스트</p>
+    <!-- p[text="red"]에서 지정한 값으로 출력 // 텍스트 매칭 -->
+    <p text="red">텍스트 매칭 속성</p>
+</body>
+
+</html>

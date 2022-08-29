@@ -1,0 +1,40 @@
+<!-- 의사 선택자(Pseudo-class) css_Ex02참조 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* opacity 0 : 완전투명, 1: 완전 불투명 */
+        div {
+            width: 200px;
+            height: 100px;
+            color: blue;
+            background-color: green;
+            opacity: 0.9;
+        }
+
+        /* div안에 마우스를 둘 시의 조건 */
+        div:hover {
+            width: 400px;
+            height: 50px;
+            color: red;
+            background-color: yellow;
+            opacity: 0.5;
+            /* 모두다 변하는데 1.5초, 마우스를 때고나서 돌아갈때 0.5초 */
+            transition: all 1.5s linear 0.5;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Pseudo-class</h2>
+    <div>애니메이션 효과<br>
+        마우스가 위에 있으면 박스가 변함~~
+    </div>
+</body>
+
+</html>

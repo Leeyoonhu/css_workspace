@@ -1,0 +1,67 @@
+<!-- 의사 선택자(Pseudo-class) css_Ex02참조 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 밑줄처리 하는 link, 방문전에 색상 설정 */
+        a:link {
+            color: blue;
+            text-decoration: underline;
+        }
+
+        /* 링크를 방문한 후의 색상 */
+        a:visited {
+            color: red;
+        }
+
+        /* 마우스를 근처에 가져다대면 텍스트 오버라인 */
+        a:hover {
+            text-decoration: overline;
+        }
+
+        /* 링크를 누를때의 색상 정의 */
+        a:active {
+            background-color: yellow;
+        }
+
+        div.d1 {
+            border: 1px dashed red;
+            width: 400px;
+            /* 글씨와 외부 선까지의 거리 */
+            padding: 5px;
+        }
+
+        div.d1:hover {
+            background-color: yellow;
+        }
+
+        div.d2 {
+            border: 1px dashed green;
+            width: 400px;
+            padding: 5px;
+        }
+
+        div.d2:hover {
+            background-color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Pseudo-class</h2>
+    <p><a href="http://www.w3.org" target="_blank">W3C 방문</a>:
+        마우스 이벤트에 따른 링크의 변화 확인하기</p>
+    <div class="d1">
+        <h3>의사 클래스1 영역</h3>마우스를 움직여 봐
+    </div>
+    <div class="d2">
+        <h3>의사 클래스1 영역</h3>마우스를 움직여 봐
+    </div>
+</body>
+
+</html>

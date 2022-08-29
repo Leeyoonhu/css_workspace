@@ -1,0 +1,43 @@
+<!-- 조합 선택자 css_Ex02참조 -->
+<!-- 자식에게만 형식 적용(body>경로..) -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body>div>h3 {
+            color: red;
+        }
+
+        body>p {
+            color: green;
+            background-color: yellow;
+        }
+
+        body>h3>tel>mobile {
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h3>Child Selector_1</h3>
+    </div>
+    <p>자식 선택자</p>
+    <!-- body>h3>tel>mobile에게만 형식 적용 -->
+    <h3>
+        <sno>1111</sno><br>
+        <std>conan</std><br>
+        <tel>
+            <office>02-1111-1111</office><br>
+            <mobile>010-1111-1111</mobile>
+        </tel>
+    </h3>
+</body>
+
+</html>

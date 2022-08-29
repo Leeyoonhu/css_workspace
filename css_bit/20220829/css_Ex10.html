@@ -1,0 +1,55 @@
+<!-- 조합 선택자 css_Ex02참조 -->
+<!-- 부모, 형제, 자식, 후손 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* div의 자식인 ul에게 적용
+        ul의 자식인 애들 모두한테도 적용됨 */
+        div ul {
+            color: red;
+        }
+
+        /* div의 자식인 h2에게 적용 */
+        div h2 {
+            color: yellow;
+            background-color: purple;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 
+    div는 부모, h1, h2, ul은 형제이면서 div의 자식
+    li들은 ul의 자식이며 div의 후손
+    부모가 자식의 속성을 정하면, 자식의 자식들도 따라가게됨
+    div 밖의 h2는 자손이 아니므로 원래대로 적용
+ -->
+    <div>
+        <h1>
+            부모의 자식이자 h2, ul의 형제
+        </h1>
+        <h2>
+            Descendant Selector_1
+        </h2>
+        <ul>
+            ul은 후손 선택자
+            <li>
+                자식의 자식(후손1)
+            </li>
+            <li>
+                자식의 자식(후손2)
+            </li>
+        </ul>
+    </div>
+    <h2>
+        Descendant Selector_2
+    </h2>
+</body>
+
+</html>
