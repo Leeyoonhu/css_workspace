@@ -1,0 +1,62 @@
+<!-- float 속성(3/8) // css_Ex05.css 참조 -->
+<!-- clear // float 속성이 적용되지 않도록 할 때 사용 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .div1 {
+            float: left;
+            width: 100px;
+            height: 50px;
+            margin: 10px;
+            border: 3px solid #73ad21;
+        }
+
+        /* div1 을 감싸는 div2 */
+        .div2 {
+            border: 1px solid red;
+        }
+
+        .div3 {
+            float: left;
+            width: 100px;
+            height: 50px;
+            margin: 10px;
+            border: 3px solid #73ad21;
+        }
+
+        /* div3를 감싸는 div4 */
+        /* div3를 감싸고 싶지 않은경우 
+        ==> div4에서 div3위치를 clear */
+        .div4 {
+            border: 1px solid red;
+            clear: left;
+            /* 좌측의 float 제거 */
+        }
+    </style>
+</head>
+
+<body>
+    <h2>float 속성 사용</h2>
+    <div class="div1">div1</div>
+    <div class="div2">div2 -
+        예수는 안고, 일월과 아니더면, 피가 불러 칼이다. 우리 사랑의 아름답고 못할 열락의 가슴에 찬미를 피어나는 남는 아름다우냐? 시들어 가치를 품었기 청춘에서만 할지니, 것이다. 끝까지 구하지 이상의
+        있는 트고, 생명을 발휘하기 사라지지 교향악이다. 것이다.보라, 반짝이는 산야에 품에 같이, 가장 아름다우냐? 역사를 위하여서 풀이 황금시대다. 인간의 하는 피부가 우리 따뜻한 것이다. 얼음에 우리
+        위하여, 그들의 모래뿐일 수 이상의 설산에서 맺어, 피다. 그들의 생의 열매를 관현악이며, 석가는 영원히 같은 듣기만 반짝이는 칼이다. 시들어 품에 미인을 있는 찬미를 아름답고 철환하였는가? 피는 끝에
+        길지 사랑의 위하여서.
+    </div>
+    <h2>clear 속성 사용</h2>
+    <div class="div3">div3</div>
+    <div class="div4">div4 -
+        그들의 꽃이 청춘은 끓는다. 끝에 노래하며 따뜻한 끓는다. 인생을 역사를 피가 위하여서. 있는 그림자는 생명을 황금시대의 이상의 그들을 이성은 우리 웅대한 이것이다. 얼음에 이상은 뛰노는 천하를 미묘한
+        많이 예가 작고 길지 사막이다. 피는 청춘을 힘차게 피다. 소담스러운 그것은 보배를 구할 시들어 너의 꽃 꽃이 아니다. 들어 곳으로 우리 인류의 착목한는 위하여서. 무엇을 그것은 피고, 같이,
+        약동하다. 사랑의 않는 무한한 사랑의 이것이다.
+    </div>
+</body>
+
+</html>

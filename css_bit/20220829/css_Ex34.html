@@ -1,0 +1,52 @@
+<!-- 글자 속성 // css_Ex06.css 참조 -->
+<!-- line-height 속성을 사용한 글자 수직 중앙 정렬 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .font_big {
+            font-size: 2em;
+        }
+
+        .font_italic {
+            font-style: italic;
+        }
+
+        .font_bold {
+            font-weight: bold;
+        }
+
+        .font_center {
+            text-align: center;
+        }
+
+        .button {
+            width: 150px;
+            height: 70px;
+            background-color: #00b0f0;
+            border: 10px solid #ffffff;
+            border-radius: 30px;
+            box-shadow: 5px 5px 5px #a9a9a9;
+        }
+
+        /* line-height 속성이 없을 경우 붕뜨는 Click이 생성됨 */
+        .button>a {
+            display: block;
+            line-height: 70px;
+            /* 글자의 높이 70픽셀로 지정 */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="button">
+        <a href="#" class="font_big font_italic font_bold font_center">Click</a>
+    </div>
+</body>
+
+</html>
