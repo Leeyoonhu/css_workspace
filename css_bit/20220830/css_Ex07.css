@@ -1,0 +1,21 @@
+/* 
+# 글자 생략
+    - ellipsis 클래스로 구현
+    - 정해진 크기안에 텍스트를 넣었을 때 
+    - 크기를 넘으면 overflow : hidden으로 넘은 내용 감추고
+    - 그 부분을 ...으로 말줄임표
+*/
+
+/* h1과 p태그의 크기를 지정 */
+h1,
+p {
+  width: 300px;
+}
+/* 말줄임표 속성 사용 3개는 세트로 사용됨*/
+.ellipsis {
+  white-space: nowrap;
+  /* 넘친 내용은 숨김 */
+  overflow: hidden;
+  /* 텍스트가 넘치면, 말 줄임표 */
+  text-overflow: ellipsis;
+}
