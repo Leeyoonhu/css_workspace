@@ -1,0 +1,16 @@
+/* 
+# 수평 정렬 레이아웃
+div ==> block level
+*/
+
+div.container {
+  overflow: hidden;
+}
+
+div.item {
+  float: left;
+  margin: 0.3px;
+  padding: 10px;
+  border: 1px solid black;
+}
+/* block level을 좌측 으로 정렬 */

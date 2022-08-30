@@ -1,0 +1,42 @@
+/* 
+항상 행을 먼저 쪼개고 열로 쪼갤 것
+# One True 정렬 레이아웃 
+    행을 독립적으로 생각해서 공간을 나눔
+    1. 행 구성하기
+    2. 열 구성하기
+    3. 레이아웃 구성하기
+    - 부모 태그에 고정된 너비
+    - 수평 정렬하는 부모 태그의 overflow 속성 hidden
+    - 자손 태그에 적당한 너비(width)를 입력하고 
+    배치할 위치(좌/우/중앙)에 따라 float 속성적용
+*/
+
+/* 중앙 정렬 body 너비 500 */
+body {
+  width: 500px;
+  margin: 10px auto;
+}
+/* 수평 정렬하는 부모 태그 overflow */
+#middle {
+  overflow: hidden;
+}
+/* 좌로 정렬, 너비 150px, 색상 노란색 */
+#left {
+  float: left;
+  width: 150px;
+  background: yellow;
+}
+/* 우로 정렬, 너비 350px, 색상 아쿠아색 */
+#right {
+  float: right;
+  width: 350px;
+  background: aqua;
+}
+/* 좌, 우 정렬이 아닌 상단이면 초록색 */
+#top {
+  background: green;
+}
+/* 좌, 우 정렬이 아닌 하단이면 마젠타색 */
+#bottom {
+  background: magenta;
+}

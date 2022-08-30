@@ -1,0 +1,23 @@
+/* 
+# float 속성을 이용한 레이아웃 만들기
+
+*/
+/* 크기 960px 인 중앙 정렬 body*/
+body {
+  width: 960px;
+  margin: 0 auto;
+}
+/* 좌 우 float 제거하는 clear */
+.clear {
+  clear: both;
+}
+/* 좌로 정렬, 크기는 260px */
+#aside {
+  float: left;
+  width: 260px;
+}
+/* 우로 정렬, 크기는 680px */
+#section {
+  float: right;
+  width: 680px;
+}
