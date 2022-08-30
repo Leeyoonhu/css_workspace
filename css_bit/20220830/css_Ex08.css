@@ -120,3 +120,121 @@ img {
 #main_inb > ul > li:last-child > a {
   border-radius: 0 10px 10px 0;
 }
+
+/* 6. 콘텐츠 구성(section + aside) */
+#content {
+  width: 960px;
+  margin: auto 0;
+  overflow: hidden;
+}
+/* 컨텐츠안의 section과 aside의 너비가 콘텐츠의 너비를 넘으면안댐 */
+#content > #main_section {
+  width: 700px;
+  float: left;
+}
+#content > #main_aside {
+  width: 200px;
+  float: right;
+}
+/* 메인 섹션(컨텐츠 좌측부분)을 2분할 할것 */
+#content > #main_section > article.main_article {
+  margin-top: 10px;
+  padding: 20px;
+  border: 1px solid black;
+}
+
+/* 사이드 탭바(aside) 구성 */
+/* 
+    라디오 버튼 2개로 버튼을 누를때마다 나오는 정보가 다르게 
+    radio - label 속성 이용
+    기본적으로 다 감춘 상태에서 보여주는 식으로 구성해야함
+
+    input 태그는 보이지 않게 설정
+    input 태그가 체크되어있으면, 뒤에 div 태그 display: none
+    반대로 체크 안되있으면, 뒤에 div 태그 display :block
+*/
+/* 탭 기능 구성 */
+/* 첫 번째 탭을 선택 시 */
+input:nth-of-type(1) {
+  display: none;
+}
+input:nth-of-type(1) ~ div:nth-of-type(1) {
+  display: none;
+}
+input:nth-of-type(1):checked ~ div:nth-of-type(1) {
+  display: block;
+}
+/* 두번째 탭을 선택시 */
+input:nth-of-type(2) {
+  display: none;
+}
+input:nth-of-type(2) ~ div:nth-of-type(2) {
+  display: none;
+}
+input:nth-of-type(2):checked ~ div:nth-of-type(2) {
+  display: block;
+}
+
+/* 사이드 탭 모양 구성 */
+section.buttons {
+  overflow: hidden;
+}
+section.buttons > label {
+  display: block;
+  float: left;
+  width: 100px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  box-sizing: border-box;
+  border: 1px solid black;
+  background: black;
+  color: white;
+}
+input:nth-of-type(1):checked ~ section.buttons > label:nth-of-type(1) {
+  background: white;
+  color: black;
+}
+input:nth-of-type(2):checked ~ section.buttons > label:nth-of-type(2) {
+  background: white;
+  color: black;
+}
+/* 아이템 구분 및 보기편하게 변경 */
+.item {
+  overflow: hidden;
+  padding: 10px;
+  border: 1px solid black;
+  border-top: none;
+}
+/* 썸네일 좌로 정렬 */
+.thumbnail {
+  float: left;
+}
+/* 설명도 좌로 정렬 */
+.discription {
+  float: left;
+  margin-left: 10px;
+}
+.discription > strong {
+  display: block;
+  width: 120px;
+  /* 글씨가 길 경우 hidden 하고 ...처리 */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* 푸터(footer) 구성 */
+#main_footer {
+  /* 중앙 정렬 */
+  width: 960px;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  /* 테두리 */
+  box-sizing: border-box;
+  padding: 10px;
+  border: 1px solid black;
+  /* 글자 정렬 */
+  text-align: center;
+}
